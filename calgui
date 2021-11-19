@@ -17,15 +17,15 @@ def showCalender():
 
 #Driver code
 if __name__=='__main__':
-    new = Tk()
-    new.config(background='grey')
-    new.title("Calender")
-    new.geometry("250x140")
-    cal = Label(new, text="Calender",bg='grey',font=("times", 28, "bold"))
-    year = Label(new, text="Enter year", bg='dark grey')
-    year_field=Entry(new)
-    button = Button(new, text='Show Calender',
-fg='Black',bg='Blue',command=showCalender)
+    gui = Tk()
+    gui.config(background='red')
+    gui.title("Calender")
+    gui.geometry("250x140")
+    cal = Label(gui, text="Calender",bg='red',font=("times", 28, "bold"))
+    year = Label(gui, text="Enter year", bg='red')
+    year_field=Entry(gui)
+    button = Button(gui, text='SHOW CALENDER',
+fg='Black',bg='red',command=showCalender)
 
     #putting widgets in position
     cal.grid(row=1, column=1)
